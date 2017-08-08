@@ -1,6 +1,9 @@
 # Introduction to Algorithm
 
 - 说明lgn是以2为底的对数
+- 编译环境：g++ (Ubuntu 5.4.0-6ubuntu1~16.04.4) 5.4.0 20160609
+- g++ -std=c++11 XX.cpp -o XX
+
 
 ##  第一课 算法分析
 - 插入排序 [源码](https://github.com/xuyicpp/Classical_Algorithms/blob/master/Introduction_to_Algorithms/Insertion_Sort.cpp)
