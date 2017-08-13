@@ -35,10 +35,14 @@
 
 ![](./images/sort_time_compare.png)
 
-- 附：堆排序：[源码]() [算法详解](https://jingyan.baidu.com/article/5225f26b057d5de6fa0908f3.html)(注：这里的堆顶的下标是从1开始的)
+- 附：堆排序：[源码](https://github.com/xuyicpp/Classical_Algorithms/blob/master/Introduction_to_Algorithms/Heapsort.cpp) [算法详解](https://jingyan.baidu.com/article/5225f26b057d5de6fa0908f3.html)(注：这里的堆顶的下标是从1开始的)
 
 
 ## 第五课 线性时间排序
+
+- 在最坏情况下，任何比较排序算法都需要做Ω(nlgn)次比较。故堆排序和归并排序都是渐进最优的比较排序算法。
+- 计数排序 [源码]()
+- 基数排序 [源码]()
 
 
 
