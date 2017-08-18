@@ -11,7 +11,6 @@ void randomized_quicksort(vector<int> &a, int low, int high);
 int main()
 {
 	
-
 	vector<int> a={4,5,2,6,7,1};
 
 	for(auto temp : a)
@@ -70,6 +69,8 @@ void quick_sort(vector<int> &a, int low , int high)
 
 	quick_sort(a, low, first-1);
 	quick_sort(a, first+1, high);
+
+	return;
 }
 
 void randomized_quicksort(vector<int> &a, int low, int high)
@@ -111,4 +112,6 @@ void randomized_quicksort(vector<int> &a, int low, int high)
 
 	randomized_quicksort(a, low, first-1);
 	randomized_quicksort(a, first+1, high);
+
+	return;
 }
