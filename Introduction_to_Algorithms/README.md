@@ -60,6 +60,8 @@
 
 相比于上面的随机选择，我们有另一种类似的算法，它在最坏情况下也能达到O(n)。它也是基于数组的划分操作，而且利用特殊的手段保证每次划分两边的子数组都比较平衡；与上面算法不同之处是：本算法不是随机选择主元，而是采取一种特殊的方法选择“中位数”，这样能使子数组比较平衡，避免了上述的最坏情况（Ө(n^2)）。选出主元后，后面的处理和上述算法一致。
 
+![](./images/WorseLinearSelect.png)
+
 参考博客 [BLOG](http://www.cnblogs.com/zhoutaotao/p/4047082.html)
 
 ## 第七课 哈希表(hash table)
@@ -92,7 +94,7 @@
 
 - 随机化二叉搜索树本质上与随机化的快速排序相等,既然二叉搜索树的BST排序和快速排序效率相同，那么我们为什么还要研究它呢？原因在于，本数据结构能够支持更加快速的动态操作，诸如删除、修改、插入等操作。
 
-- Randomized Binary Search Trees Code [源码]()
+- Randomized Binary Search Trees Code [源码](https://github.com/xuyicpp/Classical_Algorithms/blob/master/Introduction_to_Algorithms/Randomized_BST_Sort.cpp)
 
 
 
