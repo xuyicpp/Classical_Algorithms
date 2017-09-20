@@ -27,5 +27,35 @@ public:
 	:key(value),color(c),parent(),left(l),right(r) { }
 };
 
+template <class T>
+class RBTree
+{
+private:
+	RBTNode<T> *mRoot;	//root node
+
+public:
+	RBTree();
+	~RBTree();
+
+	//前序遍历"红黑树"
+	void preOrder();
+	// 中序遍历"红黑树"
+	void inOrder();
+	// 后序遍历"红黑树"
+	void postOrder();
+
+	// (递归实现)查找"红黑树"中键值为key的节点
+	RBTNode<T>* search(T key);
+	// (非递归实现)查找"红黑树"中键值为key的节点
+	RBTNode<T>* iterativeSearch(T key);
+
+	// 查找最小结点：返回最小结点的键值。
+	T minimum();
+	// 查找最大结点：返回最大结点的键值。
+	T maximum();
+
+	
+};
+
 
 #endif
