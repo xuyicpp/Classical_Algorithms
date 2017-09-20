@@ -110,6 +110,14 @@
 (4) 如果一个节点是红色的，则它的子节点必须是黑色的。
 (5) 从一个节点到该节点的子孙节点的所有路径上包含相同数目的黑节点。
 
+- 红黑树的基本操作：添加
+第一步：将红黑树当做一颗二叉查找，将节点插入。
+第二步：将插入的节点着色为“红色”。
+第三步：通过一系列的旋转或着色等操作，使之重新成为一颗红黑树。
+
+- 其中第三步一共有根据父节点以及祖父节点、叔叔节点共分为5种情况。但核心思想都是将红色的节点移到根节点；然后将根节点设为黑色。
+
+
 - 源码:[RedBlackTree.h](https://github.com/xuyicpp/Classical_Algorithms/blob/master/Introduction_to_Algorithms/RedBlackTree.h)、[RedBlackTreeTest.cpp](https://github.com/xuyicpp/Classical_Algorithms/blob/master/Introduction_to_Algorithms/RedBlackTreeTest.cpp)
 
 - 参考BLOG:[红黑树(一)之 原理和算法详细介绍](http://www.cnblogs.com/skywang12345/p/3245399.html)、[红黑树(四)之 C++的实现](http://www.cnblogs.com/skywang12345/p/3624291.html)。
