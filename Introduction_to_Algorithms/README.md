@@ -130,6 +130,12 @@
 
 ## 第十一课 扩充的数据结构、动态有序统计和区间树
 
+### 方法论：如<OSTree—顺序统计树>
+- 1：选择一个基础的数据结构(red-black tree)
+- 2：在数据统计中维护一些附加信息(子树大小)
+- 3：验证这个数据结构上的信息不会受修改操作的影响(insert, delete---rotations)
+- 4：建立新的运算。假设新的数据已经存好了，然后开始使用这些信息(os_select, os_rank).
+
 - 动态顺序统计(红黑树实现)
 一种支持一般动态集合上，顺序统计操作的数据结构。通过这种数据结构，可以快速地找到一个集合中的第i小的数，（select）或给出一个指定元素在集合的全序中的位置。（rank）
 
@@ -146,5 +152,5 @@
 （3）INTERVAL-SEARCH( T, i )：返回一个指向T中元素x的指针，使x.int与i重叠。不存在返回T.nil。
 
 
-- 参考BLOG:[MIT：算法导论——11.扩充的数据结构、动态有序统计和区间树](http://blog.csdn.net/loveprogram_1/article/details/32318211)
+- 参考BLOG:[MIT：算法导论——11.扩充的数据结构、动态有序统计和区间树](http://blog.csdn.net/loveprogram_1/article/details/32318211)、[算法系列笔记5(扩展数据结构-动态顺序统计和区间树)](http://blog.csdn.net/lu597203933/article/details/43459035)
 

@@ -1,8 +1,8 @@
 /**
  * C++ 语言: 二叉查找树
  *
- * @author skywang
- * @date 2013/11/07
+ * @author XY
+ * @date 2017/10/07
  */
 
 #include <iostream>
