@@ -139,17 +139,15 @@
 - 动态顺序统计(红黑树实现)
 一种支持一般动态集合上，顺序统计操作的数据结构。通过这种数据结构，可以快速地找到一个集合中的第i小的数，（select）或给出一个指定元素在集合的全序中的位置。（rank）
 
-- 如何扩张数据结构（Ex. OS-trees）
-（1）选择一种基础数据结构。（red-black tree）
-（2）确定基础数据结构中要维护的附加信息。(subtree size,直接记录秩也可以，不过速度太慢了)
-（3）检验基础数据结构上的基本修改操作能否维护附加信息。（Insert、Delete/Rotate是否可以维持子树大小的信息）
-（4）设计一些新操作。（怎么使用这些信息：OS-Select、OS-Rank）
+- 源码：[DynamicOrderStatisticsTree.h](https://github.com/xuyicpp/Classical_Algorithms/blob/master/Introduction_to_Algorithms/DynamicOrderStatisticsTree.h)、[DOSTree.cpp](https://github.com/xuyicpp/Classical_Algorithms/blob/master/Introduction_to_Algorithms/DOSTree.cpp)、[DynamicOrderStatisticsTreeTest.cpp](https://github.com/xuyicpp/Classical_Algorithms/blob/master/Introduction_to_Algorithms/DynamicOrderStatisticsTreeTest.cpp)
 
 - 区间树】一种对动态集合进行维护的红黑树，其中每个元素x都包含一个区间x.int。
 区间树支持下列操作：
 （1）INTERVAL-INSERT( T, x )：将包含区间属性的int的元素x插入到树T中。
 （2）INTERVAL-DELETE( T, x )：从T删除x。
 （3）INTERVAL-SEARCH( T, i )：返回一个指向T中元素x的指针，使x.int与i重叠。不存在返回T.nil。
+
+- 源码：[IntervalTree.h](https://github.com/xuyicpp/Classical_Algorithms/blob/master/Introduction_to_Algorithms/IntervalTree.h)、[IntervalTree.cpp](https://github.com/xuyicpp/Classical_Algorithms/blob/master/Introduction_to_Algorithms/IntervalTree.cpp)、[InternalTreeTest.cpp](https://github.com/xuyicpp/Classical_Algorithms/blob/master/Introduction_to_Algorithms/InternalTreeTest.cpp)
 
 
 - 参考BLOG:[MIT：算法导论——11.扩充的数据结构、动态有序统计和区间树](http://blog.csdn.net/loveprogram_1/article/details/32318211)、[算法系列笔记5(扩展数据结构-动态顺序统计和区间树)](http://blog.csdn.net/lu597203933/article/details/43459035)
