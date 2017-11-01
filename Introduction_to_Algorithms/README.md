@@ -136,12 +136,11 @@
 - 3：验证这个数据结构上的信息不会受修改操作的影响(insert, delete---rotations)
 - 4：建立新的运算。假设新的数据已经存好了，然后开始使用这些信息(os_select, os_rank).
 
-- 动态顺序统计(红黑树实现)
-一种支持一般动态集合上，顺序统计操作的数据结构。通过这种数据结构，可以快速地找到一个集合中的第i小的数，（select）或给出一个指定元素在集合的全序中的位置。（rank）
+- 动态顺序统计(红黑树实现):一种支持一般动态集合上，顺序统计操作的数据结构。通过这种数据结构，可以快速地找到一个集合中的第i小的数，（select）或给出一个指定元素在集合的全序中的位置。（rank）
 
 - 源码：[DynamicOrderStatisticsTree.h](https://github.com/xuyicpp/Classical_Algorithms/blob/master/Introduction_to_Algorithms/DynamicOrderStatisticsTree.h)、[DOSTree.cpp](https://github.com/xuyicpp/Classical_Algorithms/blob/master/Introduction_to_Algorithms/DOSTree.cpp)、[DynamicOrderStatisticsTreeTest.cpp](https://github.com/xuyicpp/Classical_Algorithms/blob/master/Introduction_to_Algorithms/DynamicOrderStatisticsTreeTest.cpp)
 
-- 区间树】一种对动态集合进行维护的红黑树，其中每个元素x都包含一个区间x.int。
+- 区间树:一种对动态集合进行维护的红黑树，其中每个元素x都包含一个区间x.int。
 区间树支持下列操作：
 （1）INTERVAL-INSERT( T, x )：将包含区间属性的int的元素x插入到树T中。
 （2）INTERVAL-DELETE( T, x )：从T删除x。
@@ -151,4 +150,18 @@
 
 
 - 参考BLOG:[MIT：算法导论——11.扩充的数据结构、动态有序统计和区间树](http://blog.csdn.net/loveprogram_1/article/details/32318211)、[算法系列笔记5(扩展数据结构-动态顺序统计和区间树)](http://blog.csdn.net/lu597203933/article/details/43459035)
+
+## 第十二课 跳跃表
+
+### skip list 介绍
+
+- Skip list是一个用于有序元素序列快速搜索的数据结构，由美国计算机科学家William Pugh发明于1989年。它的效率和红黑树以及 AVL 树不相上下，但实现起来比较容易。Skip list是一个“概率型”的数据结构，可以在很多应用场景中替代平衡树。Skip list算法与平衡树相比，有相似的渐进期望时间边界，但是它更简单，更快，使用更少的空间。 
+Skip list是一个分层结构多级链表，最下层是原始的链表，每个层级都是下一个层级的“高速跑道”。
+![](./images/skip_list.png)
+
+
+- 参考BLOG:[跳跃表以及C++实现](http://blog.csdn.net/yinlili2010/article/details/39503655)、[【算法导论】 第十二课 跳跃表](http://blog.csdn.net/lth404391139/article/details/45111689)、[【算法导论33】跳跃表（Skip list）原理与java实现](http://blog.csdn.net/brillianteagle/article/details/52206261)
+
+
+
 
