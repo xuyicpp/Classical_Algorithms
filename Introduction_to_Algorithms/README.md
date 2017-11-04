@@ -98,6 +98,7 @@
 - 参考BLOG [算法导论-二叉查找树](http://www.cnblogs.com/zhoutaotao/p/4096237.html)
 
 ## 第十课 平衡搜索树
+- 红黑树的面试考点一般为，红黑树的特性和红黑树的基本操作：添加。
 
 - 红黑树（Red Black Tree） 是一种自平衡二叉查找树，是在计算机科学中用到的一种数据结构，典型的用途是实现关联数组。它的统计性能要好于平衡二叉树(有些书籍根据作者姓名，Adelson-Velskii和Landis，将其称为AVL-树)
 
@@ -159,10 +160,26 @@
 Skip list是一个分层结构多级链表，最下层是原始的链表，每个层级都是下一个层级的“高速跑道”。
 ![](./images/skip_list.png)
 
+### skip list 空间分析
+
+- 假设一个链表的长度为T=2ⁿ，每次提升的概率为P=1/2，由等比公式可得存储的空间为2T，所以空间复杂度为2 * Θ(T) ≈ Θ(n)。查找、插入、删除的时间复杂度为Θ(㏒n)。
+![](./images/skip_list2.png)
+
+
+
 - 源码:[SkipList.cpp](https://github.com/xuyicpp/Classical_Algorithms/blob/master/Introduction_to_Algorithms/SkipList.cpp)
 
 
 - 参考BLOG:[跳跃表以及C++实现](http://blog.csdn.net/yinlili2010/article/details/39503655)、[【算法导论】 第十二课 跳跃表](http://blog.csdn.net/lth404391139/article/details/45111689)、[【算法导论33】跳跃表（Skip list）原理与java实现](http://blog.csdn.net/brillianteagle/article/details/52206261)、[数据结构与算法(c++)——跳跃表(skip list)](http://www.cnblogs.com/learnhow/p/6749648.html)
+
+## 第十三课 平摊分析，表的扩增，势能方法
+
+### 平摊分析概念
+
+
+- 平摊分析对于有实时需求的场合不太适合。(实时操作系统必须及时响应所要求的任务，在限定时间内完成任务。非实时的操作系统，多时间不是很敏感，对所要求的任务只是会保证完成，但在什么时候完成，或用多长的时间完成就不一定了。)
+
+- 参考BLOG:[算法课笔记系列（七）—— 平摊分析](http://www.mamicode.com/info-detail-1345652.html)、[算法设计分析之一（平摊分析，表扩增，势能方法）](http://blog.csdn.net/onyheart/article/details/15797499)
 
 
 
