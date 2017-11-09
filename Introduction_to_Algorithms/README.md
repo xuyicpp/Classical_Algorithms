@@ -258,7 +258,7 @@ l  元素在L中的位置可以通过交换相邻的元素来改变，而这个�
 ### 核心
 
 我们通常按如下4个步骤来设计一个动态规划算法：
-- 1.刻画一个最优解的结构特征。
+- 1.刻画一个最优解的结构特征。 
 - 2.递归地定义最优解的值。
 - 3.计算最优解的值，通常采用自底向上的方法。
 - 4.利用计算出的信息构造一个最优解。
@@ -267,7 +267,7 @@ l  元素在L中的位置可以通过交换相邻的元素来改变，而这个�
 - 最优子结构和子问题重叠。
 
 ### 问题
-- 钢条切割: [源码](https://github.com/xuyicpp/Classical_Algorithms/blob/master/Introduction_to_Algorithms/DP_SteelCutting.cpp)
-- 矩阵链乘法: [源码](https://github.com/xuyicpp/Classical_Algorithms/blob/master/Introduction_to_Algorithms/DP_MatrixMultiply.cpp)
+- 钢条切割(对递归算法加入备忘机制): [源码](https://github.com/xuyicpp/Classical_Algorithms/blob/master/Introduction_to_Algorithms/DP_SteelCutting.cpp)
+- 矩阵链乘法(钢条问题的升级版): [源码](https://github.com/xuyicpp/Classical_Algorithms/blob/master/Introduction_to_Algorithms/DP_MatrixMultiply.cpp)
 - 最长公共子序列: [源码]()
 - 最优二叉搜索树: [源码]()
