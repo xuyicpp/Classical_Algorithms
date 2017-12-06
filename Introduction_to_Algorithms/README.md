@@ -245,7 +245,7 @@ l  元素在L中的位置可以通过交换相邻的元素来改变，而这个�
 
 - 转载自:[http://blog.csdn.net/onyheart/article/details/16331219](http://blog.csdn.net/onyheart/article/details/16331219)
 
-## 动态规划，最长公共子序列
+## 第十五课 动态规划，最长公共子序列
 
 ### 基本概念
 
@@ -272,4 +272,30 @@ l  元素在L中的位置可以通过交换相邻的元素来改变，而这个�
 - 最长公共子序列: [源码](https://github.com/xuyicpp/Classical_Algorithms/blob/master/Introduction_to_Algorithms/DP_LCS.cpp)
 - 最优二叉搜索树: [源码](https://github.com/xuyicpp/Classical_Algorithms/blob/master/Introduction_to_Algorithms/DP_Optimal_BST.cpp)
 
-##  贪婪算法，最小生成树
+## 第十六课 贪婪算法，最小生成树
+
+### 贪心算法的基本概念及应用
+- 贪心算法：每一步都做出当时看起来最佳的选择，即局部最优解，寄希望这样能导致全局最优解。
+- 应用：活动选择问题，哈夫曼编码。
+
+### 哈夫曼编码
+根据每个字符出现频率，哈夫曼贪心算法构造出字符的最优二进制表示。
+- 变长编码：可以达到比定长编码好的多的压缩率，其思想是赋予高频字符短码字，低频字符长码字。
+- 前缀码：没有任何码字是其他码字的前缀。
+
+### 问题
+已知:a:45,b:13,c:12,d:16,e:9,f:5,求变长编码。
+<font color="red">哈夫曼编码</font>：[源码](https://github.com/xuyicpp/Classical_Algorithms/blob/master/Introduction_to_Algorithms/HuffmanCode.cpp)
+
+### 最小生成树的基本概念及应用
+- 最小生成树：有一个联通的无向图G=(V,E)(V是点的集合，E是点之间可能的链接)。我们希望找到一个无环的子集T属于E，既能够将所有的点连接起来，又具有最小的权重。因此，T必然是一颗树。我们称这样的树为生成树，因为它是由图G所生成的。我们称求取该生成树的问题为最小生成树问题。
+- 应用：分布式系统，AT&T的记账系统，电子电路设计。
+
+### 相关知识
+- 图的表示可以用一个二维矩阵，也可以用一个邻接表。这样就可以节省很多空间。
+- 优先队列：在优先队列中，元素被赋予优先级。当访问元素时，具有最高优先级的元素最先删除。优先队列具有最高级先出 （first in, largest out）的行为特征。
+- Kruskal算法和Prim算法。如果使用普通的二叉堆，那么很容易地将这两个算法的时间复杂度限制在O(ElgV)的数量级内。但如果使用斐波那契数列;Prim算法的运行时间将改善为O(E+VlgV)。此运行时间在|V|远远小于|E|的情况下较二叉堆有很大的改进。
+
+### 问题
+- Kruskal算法找到安全边的办法是，在所有连接森林中两颗不同树的边里面，找到权重最小的边(u,v)。[源码](https://github.com/xuyicpp/Classical_Algorithms/blob/master/Introduction_to_Algorithms/MST_Kruskal.cpp)
+- Prim算法所具有的一个性质是集合A中的边总是构成一棵树。[源码](https://github.com/xuyicpp/Classical_Algorithms/blob/master/Introduction_to_Algorithms/MST_Prim.cpp)
