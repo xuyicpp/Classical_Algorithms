@@ -299,3 +299,13 @@ l  元素在L中的位置可以通过交换相邻的元素来改变，而这个�
 ### 问题
 - Kruskal算法找到安全边的办法是，在所有连接森林中两颗不同树的边里面，找到权重最小的边(u,v)。[源码](https://github.com/xuyicpp/Classical_Algorithms/blob/master/Introduction_to_Algorithms/MST_Kruskal.cpp)
 - Prim算法所具有的一个性质是集合A中的边总是构成一棵树。[源码](https://github.com/xuyicpp/Classical_Algorithms/blob/master/Introduction_to_Algorithms/MST_Prim.cpp)
+
+### 参考BLOG
+- [哈夫曼（Huffman）编码问题](http://blog.csdn.net/to_baidu/article/details/50302071)
+- [算法导论--最小生成树（Kruskal和Prim算法）](http://blog.csdn.net/luoshixian099/article/details/51908175)
+
+## 第十七课 最短路径算法：Dijkstra算法，广度优先搜索
+
+## 第十八课 最短路径算法：Bellman和差分约束系统
+
+## 第十九课 最短路径算法：点的最短路径 
