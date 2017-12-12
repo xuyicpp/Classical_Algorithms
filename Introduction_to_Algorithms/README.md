@@ -284,7 +284,7 @@ l  元素在L中的位置可以通过交换相邻的元素来改变，而这个�
 - 前缀码：没有任何码字是其他码字的前缀。
 
 ### 问题
-已知:a:45,b:13,c:12,d:16,e:9,f:5,求变长编码。
+已知: a:45,b:13,c:12,d:16,e:9,f:5,求变长编码。
 <font color="red">哈夫曼编码</font>：[源码](https://github.com/xuyicpp/Classical_Algorithms/blob/master/Introduction_to_Algorithms/HuffmanCode.cpp)
 
 ### 最小生成树的基本概念及应用
