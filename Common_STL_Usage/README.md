@@ -1,10 +1,10 @@
 # Classical_Algorithm
 Introduction to Algorithm
 
-- C++中的vector使用规范 [BLOG](https://wenku.baidu.com/view/4bb4ea03a45177232e60a20f.html)
+- C++中的vector使用规范 [BLOG](https://wenku.baidu.com/view/4bb4ea03a45177232e60a20f.html)、[Usage](https://github.com/xuyicpp/Classical_Algorithms/blob/master/Common_STL_Usage/Usage_String.cpp)
 
-- C++中string的用法 [BLOG](https://jingyan.baidu.com/article/20b68a8854f919796dec6265.html)
-
+- C++中string的用法 [BLOG](https://jingyan.baidu.com/article/20b68a8854f919796dec6265.html)、[Usage](
+https://github.com/xuyicpp/Classical_Algorithms/blob/master/Common_STL_Usage/Usage_String.cpp)
 /定义和结构初始化
 //string 提供了很多构造函数，可以以多种方式来初始化string字符串
 void init();
